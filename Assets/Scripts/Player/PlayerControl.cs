@@ -13,7 +13,7 @@ public class Script : MonoBehaviour
     {
         speed_multiplayer = 125f;
         max_speed = 10f;
-        jump_force = 625f;
+        jump_force = 1100f;
         is_grounded = false;
         camera_size = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         Debug.Log("Danil_Kolbasenko");
@@ -38,8 +38,8 @@ public class Script : MonoBehaviour
     void LateUpdate()
     {
         Vector3 current_position = transform.position;
-        current_position.x = Mathf.Clamp(transform.position.x, -camera_size.x + current_object_size_x, camera_size.x - current_object_size_x);
-        current_position.y = Mathf.Clamp(transform.position.y, -camera_size.y + current_object_size_y, camera_size.y - current_object_size_y);
+        //current_position.x = Mathf.Clamp(transform.position.x, -camera_size.x + current_object_size_x, camera_size.x - current_object_size_x);
+        //current_position.y = Mathf.Clamp(transform.position.y, -camera_size.y + current_object_size_y, camera_size.y - current_object_size_y);
         transform.position = current_position;
     }
 }
