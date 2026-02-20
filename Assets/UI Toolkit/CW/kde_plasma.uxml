@@ -3,6 +3,6 @@
     <ui:VisualElement style="flex-grow: 1; font-size: 60px; color: rgb(255, 0, 215);">
         <ui:Label text="Hello World!!!" name="Timer" class="timer" style="-unity-text-align: upper-right;"/>
         <ui:Label text="" name="WINTEXT" class="WinText" style="-unity-text-align: upper-center; font-size: 80px; top: 25%; color: rgb(0, 0, 0);"/>
-        <ui:Button text="Возвращайся на родину" enabled="false" name="continueButton" style="-unity-text-align: middle-center; top: 40%; width: 50%; height: 25%; bottom: auto; left: 25%; font-size: 75px; display: none;"/>
+        <ui:Button text="Возвращайся на родину" enabled="false" name="continueButton" style="-unity-text-align: middle-center; top: 40%; width: 50%; height: 25%; bottom: auto; left: 25%; font-size: 75px; display: flex; visibility: hidden;"/>
     </ui:VisualElement>
 </ui:UXML>
